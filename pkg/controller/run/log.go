@@ -61,10 +61,10 @@ func (l *Logger) Output(level, message string, line *Line, newLine string) {
 		return
 	}
 	if message == "" {
-		fmt.Fprintf(l.stderr, `%s:%d
+		fmt.Fprintf(l.stderr, `%s %s:%d
 %s
 %s
-`, line.File, line.Number, l.red("- "+line.Line), l.green("+ "+newLine))
+`, s, line.File, line.Number, l.red("- "+line.Line), l.green("+ "+newLine))
 		return
 	}
 	fmt.Fprintf(l.stderr, `%s %s
