@@ -6,7 +6,7 @@ import (
 	"github.com/lmittmann/tint"
 	"github.com/spf13/afero"
 	"github.com/suzuki-shunsuke/pinact/v3/pkg/cli/gflag"
-	"github.com/suzuki-shunsuke/pinact/v3/pkg/controller/run"
+	"github.com/vitorfloriano/pinact/v3/pkg/controller/run"
 	"github.com/suzuki-shunsuke/slog-util/slogutil"
 )
 
